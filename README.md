@@ -42,7 +42,15 @@ source("https://raw.githubusercontent.com/zktraylor/trends_in_io/master/install_
 
 ## Running the Shiny App
 
-Clone/download the Github repository (e.g., download as .zip) and run the following code in your RStudio console.
+
+You may run the app by installing the above dependencies and then entering this ins your `R` console:
+
+``` r
+shiny::runGitHub("trends_in_io", username = "zktraylor")
+```
+
+Clone/download the Github repository (e.g., download as .zip), house it on your personal machine,
+and run the following code in your `R` console:
 
 ``` r
 # clone/download file
@@ -68,7 +76,7 @@ runApp()
 
 ### September 2026
 
-- Migrated Shiny app to [zktraylor](https://www.github.com/zktraylor/trends_in_io)
+- Migrated Shiny app to [zktraylor](https://www.github.com/zktraylor/trends_in_io) from [jimmyrigby94](https://github.com/jimmyrigby94/trends_in_IO)
 
 ## Old Change Logs
 
