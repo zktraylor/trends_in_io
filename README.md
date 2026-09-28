@@ -45,20 +45,13 @@ Dependencies can easily be installed and loaded by running the following
 code.
 
 ``` r
-source("https://raw.githubusercontent.com/jimmyrigby94/trends_in_IO/master/install_dependencies.R")
+source("https://raw.githubusercontent.com/zktraylor/trends_in_io/master/install_dependencies.R")
 ```
 
 ## How to Run
 
-To run the app without downloading the repository, simply run the
-following code from your console.
-
-``` r
-shiny::runGitHub("trends_in_IO", username = "jimmyrigby94")
-```
-
-Alternatively, you can download the repository and run the following
-code.
+Download the repository and run the following
+code in your RStudio console.
 
 ``` r
 # First clone the repository with git. If you have cloned it into
@@ -66,20 +59,6 @@ code.
 setwd("~/shiny_example")
 runApp()
 ```
-
-## What’s New?
-
-  - Updated and simplified UI
-  - Added intro.js Tutorial
-  - Made cite-pred robust to null search results
-
-## Future Improvements
-
-  - Action buttons that quickly select a subcategory of journals (i.e.,
-    Research Methods, OHP)
-  - Identification of emerging subtopics related to search
-  - Implementation of TF-IDF ranking
-  - Outlet recommendations
 
 ## Screenshots
 
@@ -93,22 +72,21 @@ runApp()
 
 ### January 2020
 
-  - Significant speed imporvements
-  - Reorganization of internals
+  - Significant speed improvements
+  - Internal reorganization
   - Action button for new search
-  - Correcting a few errors
 
 ### October 2019
 
-  - Action buttons that quickly select and deselect all journals
-  - Complete overhaul of UI
-  - Refinement of visualizations
+  - Added ability to quickly select and deselect all journals
+  - Completely overhauled UI
+  - Refined outputted visualizations
 
 ### September 2019
 
-  - Expanded the database coverage to include more than 30 new journals
-  - Included visualizations of citation rates
-  - Implemented data import using vroom for increased speed
-  - Updated UI
+  - Expanded database coverage to include 30 additional journals
+  - Included citation-rate visualization
+  - Implemented data import via `vroom` to increase speed
+  - UI update
   - Aesthetic improvements
   - Code improvements and clarity
