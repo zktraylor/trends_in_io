@@ -1,0 +1,265 @@
+/* Defining Parent Styles
+
+h2 { 
+  text-align: left; 
+}
+a {
+  display: inline;
+}
+p {
+  font-size: 18px;
+}
+
+/* Setting up multicolumn support for journal selector input */
+
+.multicol {
+
+      -webkit-column-count: 3; /* Chrome, Safari, Opera */
+      -moz-column-count: 3; /* Firefox */
+      -ms-column-count: 3;
+      column-count: 3;
+
+    }
+
+/* Coloring Slider input*/  
+    
+.irs-bar {
+    height: 8px;
+    top: 25px;
+    border-top: 1px solid #a8605c;
+    border-bottom: 1px solid 	#a8605c;
+    background: 	#a8605c;
+}
+
+.irs-grid-pol {
+  background: 	#a8605c;
+}
+
+.irs-grid-pol.small {
+  background: 	#a8605c;
+}
+
+.irs-min, .irs-max, .irs-from, .irs-to{
+  background: 	#a8605c;
+  color: white;
+}
+
+/*Stlying different buttons */
+
+/*Shiny buttons*/
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+    
+/*User Defined Menu Buttons*/
+
+.btn2 {
+    float:left;
+    height:100%;
+    font-size: 150%;
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width:20%;
+    overflow:hidden;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    color: white !important;
+    background: #605ca8;
+    text-indent: 4px;
+    border-radius: 0;
+    border-color: transparent;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -o-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*User Defined Modal window Buttons*/
+
+.btn3 {
+    font-size: 100%;
+    text-align: left;
+    color: white;
+    background: #222d32;
+    border-radius: 0;
+    border-color: transparent;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18), 0 1px 5px 0 rgba(0,0,0,0.15);
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -o-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding:1%;
+}
+
+.btn2:hover, .btn2:active {
+    background: #555299;
+    color: white !important;
+}
+
+.btn3:hover, .btn3:active, .btn3:active, .btn3:link {
+    background: #a8605c;
+    color: white !important;
+}
+
+/* Hiding shiny output errors from user */
+
+.shiny-output-error { visibility: hidden; }
+.shiny-output-error: before { visibility: hidden; }
+
+/*Doing some hacky formatting of header to override shiny defaults */
+/*special emphasis was placed on making dashboard mobile friendly */
+.skin-purple .sidebar-menu>li.active>a, .skin-purple .sidebar-menu>li:hover>a {
+  background: #222d32;
+  border-left-color: #222d32;
+}
+
+.skin-purple .sidebar a {
+margin-left: 5%;
+}
+
+.centerdiv {
+  width: 100%;
+  margin: auto;
+}
+
+.skin-purple .main-header .logo {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+
+.navbar-custom-menu, .nav.navbar-nav, .dropdown{
+  width:90%;
+  height:100%;
+}
+
+.mobile_nav {
+        display: none;
+    }
+
+
+@media only screen and (max-width: 1200px) {
+        .mobile_nav{display: block;}       
+        .desktop_nav {display: none;}
+        .navbar-custom-menu, .nav.navbar-nav{
+          width:85%;
+        }
+    } 
+    
+    
+/* Formatting modal contents */
+   
+.modal-header {
+    background: #a8605c;
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    margin-top:-20px;
+}
+
+.modal-body {
+  padding:0;
+}
+
+.modal-container {
+  padding: 15px;
+}
+
+.citation-box{
+  border: solid;
+  margin-left:5%;
+  margin-right:5%;
+  border-width:thin;
+}
+
+.citation{
+    font-size: 1.25em;
+    text-indent: -16px;
+    padding-left: 16px;
+    margin:2%;
+}
+
+ 
+.citation:link {
+  color: black;
+}
+
+/*shiny defaults pop up a stupid extra scrollbar - hiding this */
+.wrapper {
+  overflow: hidden;
+}
+
+
+
+/* Old CSS */
+
+
+.label-primary {
+  visibility: hidden;
+}
+
+.menu {
+  max-height: none;
+}
+
+.tippy-popper {
+  max-width: 250px;
+}
+
+.textlist {
+  text-indent: -1.3em;
+  margin-left: 40px;
+}
+           
+.form-group {
+    margin-bottom: 1px;
+}
+
+.largerfont {
+    font-size: 130%;
+    }
+    
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu {
+  max-height:none;
+  }
+
+/*
+.skin-purple {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*/
+  
+
+
