@@ -28,16 +28,14 @@ Dependencies can be easily installed and loaded via the following `R` code.
 source("https://raw.githubusercontent.com/zktraylor/trends_in_io/master/install_dependencies.R")
 ```
 
-## Run the Shiny App
+## Running the Shiny App
 
 Clone/download the Github repository (e.g., download as .zip) and run the following code in your RStudio console.
 
 ``` r
-# clone/downloade file
-# will be saved and named `~/shiny_example`
-# set as working directory
-setwd("~/shiny_example")
-
-# use runApp() function to start Shiny app
+# clone/download file
+# will be saved and named `~/trends_in_io-master`
+# set as working directory and run/start Shiny app
+setwd("~/Downloads/trends_in_io-master")
 runApp()
 ```
