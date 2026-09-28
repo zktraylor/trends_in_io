@@ -1,7 +1,4 @@
-Trends in I-O Psychology
-================
-
-## Trends in Industrial-Organizational Psychology
+# Trends in Industrial-Organizational Psychology
 
 As scientists look for new empirical insights in the world of industrial-organizational
 (I–O) psychology, topics inevitably fall in and out of vogue.  Perhaps the most volatile
@@ -22,6 +19,8 @@ time, and users are able to narrow down specific journals and download a .csv fi
 generated data.  Additionally, search results are used to predict citation rates across decades.
 Feel free to download and adapt the app to your needs or submit a request.
 
+---
+
 ## System Requirements
 
 In addition to R and RStudio, this app requires the following packages:
@@ -41,15 +40,19 @@ Dependencies can be easily installed and loaded via the following `R` code.
 source("https://raw.githubusercontent.com/zktraylor/trends_in_io/master/install_dependencies.R")
 ```
 
-## Run the Shiny App
+## Running the Shiny App
 
-Clone/download the repository using git (e.g., download as .zip) and run the following code in your RStudio console.
+Clone/download the Github repository (e.g., download as .zip) and run the following code in your RStudio console.
 
 ``` r
-# cloned/downloaded file is named `~/shiny_example`
-# set as working directory
-setwd("~/shiny_example")
+# clone/download file
+# will be saved and named `~/trends_in_io-master`
+# set as working directory and run/start Shiny app
+setwd("~/Downloads/trends_in_io-master")
+runApp()
 ```
+
+---
 
 ## Screenshots
 
@@ -58,6 +61,8 @@ setwd("~/shiny_example")
 ![Results](supl/search_results.png)
 
 ![Trend by Publication Outlet](supl/journal_selection.png)
+
+---
 
 ## Change Logs
 
